@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-container: var(--container);
+  --color-title: var(--title);
+  --color-text: var(--text);
+
+  --font-poppins: var(--font-poppins);
+}
+
+/* -------------------------------------------
+   LIGHT MODE COLORS (Default)
+------------------------------------------- */
+:root {
+  --background: #fafafa;
+  --container: #ffffff;
+  --title: #333333;
+  --text: #757575;
+
+  --header-height: 3rem;
+}
+
+/* -------------------------------------------
+   DARK MODE COLORS 
+------------------------------------------- */
+.dark {
+  --background: #0b1120;
+  --container: #1e293b;
+  --title: #f8fafc;
+  --text: #94a3b8;
+}
+
+/* -------------------------------------------
+   BASE STYLES
+------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-poppins);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: hsl(0, 0%, 80%);
+}
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 60%);
+  border-radius: 8px;
+}
+
+.dark ::-webkit-scrollbar {
+  background-color: #0f172a;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #334155;
+}
+
+/* Container */
+.container {
+  max-width: 968px;
+  margin: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Profile Blob Animation Keyframes */
+@keyframes profile-animate {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+.animate-profile {
+  animation: profile-animate 8s ease-in-out infinite;
+}
