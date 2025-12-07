@@ -78,8 +78,8 @@ const Contact = () => {
             <ContactCard
               icon={<Mail size={24} />}
               title="Email"
-              data="z4codelearn@gmail.com"
-              link="mailto:z4codelearn@gmail.com"
+              data="Sharif Ahmad"
+              link="mailto:sharifahmadwd@gmail.com"
               variants={fadeUp}
             />
 
@@ -87,8 +87,8 @@ const Contact = () => {
             <ContactCard
               icon={<Linkedin size={24} />}
               title="LinkedIn"
-              data="Shahriar Kabir (Zafor)"
-              link="https://www.linkedin.com/in/shahriar-kabir-z4"
+              data="Sharif Ahmad"
+              link="https://www.linkedin.com/in/shariful-islam-web-developer/"
               variants={fadeUp}
             />
 
@@ -96,8 +96,8 @@ const Contact = () => {
             <ContactCard
               icon={<Facebook size={24} />}
               title="Facebook"
-              data="Shariar Kabir"
-              link="https://www.facebook.com/shariarkabirz4"
+              data="Sharif Ahmad"
+              link="https://www.facebook.com/profile.php?id=61576389759662"
               variants={fadeUp}
             />
           </div>
