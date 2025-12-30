@@ -1,6 +1,6 @@
 # 🚀 Shahriar - Professional Portfolio
 
-![Project Banner](https://i.ibb.co.com/SD8BfpqR/portfolio-banner.png) 
+![Project Banner](https://i.postimg.cc/90JB3vZW/Screenshot-8.png) 
 
 
 A modern, high-performance, and fully responsive Personal Portfolio website built with **Next.js 14**, **Tailwind CSS**, and **Framer Motion**. This project showcases a seamless user experience with dark/light mode support, interactive animations, and a functional contact form.
@@ -96,13 +96,13 @@ A quick look at the top-level files and directories you'll see in this project.
 ```
 
 ## 🤝 Contact
-**Shahriar Kabir**
+**Sharif Ahmad**
 Full Stack Developer
 
 
-*   **📧 Email:** z4codelearn@gmail.com
-*   **🔗 LinkedIn:** Shahriar Kabir (Zafor)
-*   **💻 GitHub:** github.com/your-github-username
+*   **📧 Email:** sharifahmadWd@gmail.com
+*   **🔗 LinkedIn:** Sharif Ahmad
+*   **💻 GitHub:** https://github.com/sharif-ahmad557/
 
 
 <div align="center">
