@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { Link } from "react-scroll";
+import { FileText } from "lucide-react";
 
 const Hero = () => {
   const socialLinks = [
@@ -49,7 +50,6 @@ const Hero = () => {
       className="min-h-screen flex items-center justify-center pt-[var(--header-height)] pb-12 overflow-hidden relative"
     >
       {/* ============ BACKGROUND DECORATION ============ */}
-      {/* Dot Pattern - Opacity একটু কমানো হয়েছে (opacity-40) যাতে চোখে কম লাগে */}
       <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#1f2937_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-60 dark:opacity-40"></div>
 
       {/* Blur Blobs */}
@@ -144,16 +144,17 @@ const Hero = () => {
             variants={itemVariants}
             className="flex flex-wrap gap-4 pt-2 justify-center md:justify-start"
           >
-            <a
-              href="#contact"
-              className="bg-title text-background hover:bg-title/90 px-8 py-4 rounded-xl flex items-center gap-2 transition-all duration-300 shadow-xl shadow-title/10 group font-medium"
+            <motion.a
+              variants={itemVariants}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              href="/assets/Resume_of_SHARIF_AHMAD.pdf"
+              download="Resume of SHARIF AHMAD"
+              className="bg-title text-background hover:bg-title/90 px-8 py-4 rounded-xl flex items-center gap-3 transition-all duration-300 shadow-xl shadow-title/10 group font-medium"
             >
-              Contact Me
-              <Send
-                size={18}
-                className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
-              />
-            </a>
+              Download CV
+              <FileText size={20} className="group-hover:animate-bounce" />
+            </motion.a>
 
             <a
               href="#portfolio"
@@ -180,7 +181,6 @@ const Hero = () => {
         {/* ============ 3. IMAGE PROFILE (RIGHT SIDE) ============ */}
         <div className="order-1 md:order-2 flex justify-center relative z-10">
           <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px]">
-            {/* Morphing Background Shape */}
             <motion.div
               animate={{
                 borderRadius: [
@@ -209,7 +209,6 @@ const Hero = () => {
               />
             </motion.div>
 
-            {/* Floating Glass Badge 1: Experience */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -228,7 +227,6 @@ const Hero = () => {
               </div>
             </motion.div>
 
-            {/* Floating Glass Badge 2: Projects */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -259,8 +257,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll Down Indicator 
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, y: [0, 10, 0] }}
         transition={{ delay: 1.5, duration: 2, repeat: Infinity }}

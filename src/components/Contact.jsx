@@ -46,16 +46,12 @@ const Contact = () => {
       id="contact"
       className="section py-20 px-4 transition-colors relative overflow-hidden"
     >
-      {/* ============ BACKGROUND DECORATION ============ */}
-      {/* ডট প্যাটার্ন */}
       <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#9ca3af_1px,transparent_1px)] dark:bg-[radial-gradient(#4b5563_1px,transparent_1px)] [background-size:20px_20px] opacity-40 dark:opacity-30"></div>
 
-      {/* ব্লার ইফেক্ট */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-title/5 rounded-full blur-[100px] -z-10"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/5 rounded-full blur-[100px] -z-10"></div>
 
       <div className="container relative z-10">
-        {/* ============ SECTION TITLE ============ */}
         <div className="text-center mb-12">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
@@ -68,7 +64,6 @@ const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] lg:grid-cols-[300px_1fr] gap-10 items-start">
-          {/* ============ LEFT SIDE: INFO CARDS ============ */}
           <div className="flex flex-col gap-4">
             <h3 className="text-lg font-medium text-title text-center mb-2">
               Talk to me
@@ -88,7 +83,7 @@ const Contact = () => {
               icon={<Linkedin size={24} />}
               title="LinkedIn"
               data="Sharif Ahmad"
-              link="https://www.linkedin.com/in/shariful-islam-web-developer/"
+              link="https://www.linkedin.com/in/shariful-islam-mern/"
               variants={fadeUp}
             />
 
@@ -102,7 +97,6 @@ const Contact = () => {
             />
           </div>
 
-          {/* ============ RIGHT SIDE: FORM ============ */}
           <div className="flex flex-col">
             <h3 className="text-lg font-medium text-title text-center mb-6">
               Write me your project
@@ -117,7 +111,6 @@ const Contact = () => {
               onSubmit={sendEmail}
               className="flex flex-col gap-6"
             >
-              {/* Name Input */}
               <div className="relative group">
                 <label className="absolute -top-3 left-4 bg-background/90 px-2 text-sm text-text transition-colors z-10 rounded-md">
                   Name
@@ -145,7 +138,6 @@ const Contact = () => {
                 />
               </div>
 
-              {/* Project/Message Input */}
               <div className="relative group">
                 <label className="absolute bg-background/90 -top-3 left-4 px-2 text-sm text-text transition-colors z-10 rounded-md">
                   Project
@@ -158,7 +150,6 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              {/* Submit Button */}
               <button
                 type="submit"
                 disabled={loading}
@@ -180,7 +171,6 @@ const Contact = () => {
   );
 };
 
-// Reusable Small Card Component
 const ContactCard = ({ icon, title, data, link, variants }) => {
   return (
     <motion.div

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Award, Briefcase, Headphones, FileText, Code2 } from "lucide-react";
+import { Award, Briefcase, Headphones, Send, Code2 } from "lucide-react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
@@ -31,34 +31,27 @@ const About = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
-  // ডটের কালার নির্ধারণ (লাইট এবং ডার্ক মোডের জন্য)
   const dotColor = mounted && theme === "dark" ? "#4b5563" : "#9ca3af";
 
   return (
     <section
       id="about"
       className="relative py-20 px-4 md:py-28 overflow-hidden"
-      // Section থেকে bg-background সরিয়ে দিয়েছি যাতে ডট দেখা যায়
     >
-      {/* ============ 1. SOLID BACKGROUND LAYER (Base) ============ */}
       <div className="absolute inset-0 bg-background -z-20"></div>
 
-      {/* ============ 2. DOT PATTERN LAYER (The Fix) ============ */}
       <div
         className="absolute inset-0 -z-10 h-full w-full opacity-40"
         style={{
-          // সরাসরি CSS ব্যবহার করা হয়েছে যাতে মিস না হয়
           backgroundImage: `radial-gradient(${dotColor} 1.5px, transparent 1.5px)`,
-          backgroundSize: "24px 24px", // ডটগুলোর মাঝখানের দূরত্ব
+          backgroundSize: "24px 24px",
         }}
       ></div>
 
-      {/* ============ 3. BLUR DECORATIONS ============ */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-title/10 rounded-full blur-[100px] -z-10"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/10 rounded-full blur-[100px] -z-10"></div>
 
       <div className="container mx-auto relative z-10">
-        {/* ============ SECTION TITLE ============ */}
         <div className="text-center mb-16 space-y-2">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
@@ -75,7 +68,6 @@ const About = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
-          {/* ============ LEFT SIDE (IMAGE) ============ */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -113,7 +105,6 @@ const About = () => {
             </motion.div>
           </motion.div>
 
-          {/* ============ RIGHT SIDE (CONTENT) ============ */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -158,7 +149,6 @@ const About = () => {
               </motion.div>
             </div>
 
-            {/* Description Text - GLASS BOX ADDED FOR READABILITY */}
             <motion.div
               variants={itemVariants}
               className="bg-background/80 backdrop-blur-lg border border-title/5 p-6 rounded-2xl shadow-sm mb-8 relative"
@@ -194,17 +184,16 @@ const About = () => {
             </motion.div>
 
             {/* Download CV Button */}
-            <motion.a
-              variants={itemVariants}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="assets/Resume_of_SHARIF_AHMAD.pdf"
-              download="Resume of SHARIF AHMAD"
-              className="bg-title text-background hover:bg-title/90 px-8 py-4 rounded-xl flex items-center gap-3 transition-all duration-300 shadow-xl shadow-title/10 group font-medium"
+            <a
+              href="#contact"
+              className="bg-title text-background hover:bg-title/90 px-8 py-4 rounded-xl flex items-center gap-2 transition-all duration-300 shadow-xl shadow-title/10 group font-medium"
             >
-              Download CV
-              <FileText size={20} className="group-hover:animate-bounce" />
-            </motion.a>
+              Contact Me
+              <Send
+                size={18}
+                className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
+              />
+            </a>
           </motion.div>
         </div>
       </div>

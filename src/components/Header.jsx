@@ -40,7 +40,6 @@ const Header = () => {
     { id: "about", icon: <User size={18} />, label: "About" },
     { id: "skills", icon: <FileText size={18} />, label: "Skills" },
     { id: "services", icon: <Briefcase size={18} />, label: "Services" },
-    // ফিক্স: এখানে id="portfolio" রাখা হয়েছে যাতে সেকশন খুঁজে পায়, কিন্তু লেবেল "Projects"
     { id: "portfolio", icon: <ImageIcon size={18} />, label: "Projects" },
     { id: "contact", icon: <Send size={18} />, label: "Contact" },
   ];

@@ -51,10 +51,8 @@ const Technologies = () => {
   return (
     <section className="section py-10 mb-10 px-4 overflow-hidden relative">
       {/* ============ DOT PATTERN ADDED HERE ============ */}
-      {/* ডটগুলো যাতে স্পষ্ট দেখা যায় তাই আগের মতো কালার সেট করা হয়েছে */}
       <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#9ca3af_1px,transparent_1px)] dark:bg-[radial-gradient(#4b5563_1px,transparent_1px)] [background-size:20px_20px] opacity-40 dark:opacity-30"></div>
 
-      {/* সাইডে হালকা ব্লার এফেক্ট (Optional - দেখতে ভালো লাগে) */}
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-80 h-80 bg-title/5 rounded-full blur-[100px] -z-10"></div>
 
       <div className="container relative z-10">

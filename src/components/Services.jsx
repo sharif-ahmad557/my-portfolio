@@ -119,10 +119,8 @@ const Services = () => {
       className="section py-20 px-4 transition-colors relative overflow-hidden"
     >
       {/* ============ BACKGROUND DECORATION ============ */}
-      {/* ডট প্যাটার্ন */}
       <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#9ca3af_1px,transparent_1px)] dark:bg-[radial-gradient(#4b5563_1px,transparent_1px)] [background-size:20px_20px] opacity-40 dark:opacity-30"></div>
 
-      {/* ব্লার ইফেক্ট */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-title/5 rounded-full blur-[100px] -z-10"></div>
 
       <div className="container relative z-10">

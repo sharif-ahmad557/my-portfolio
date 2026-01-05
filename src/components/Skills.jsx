@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { BadgeCheck } from "lucide-react";
 
 const Skills = () => {
-  // 1. Frontend Skills
   const frontendSkills = [
     { name: "HTML", level: "Experienced" },
     { name: "CSS", level: "Experienced" },
@@ -14,7 +13,6 @@ const Skills = () => {
     { name: "Next.js", level: "Basic" },
   ];
 
-  // 2. Backend Skills
   const backendSkills = [
     { name: "Node.js", level: "Basic" },
     { name: "Express.js", level: "Basic" },
@@ -22,7 +20,6 @@ const Skills = () => {
     { name: "Firebase", level: "Basic" },
   ];
 
-  // 3. WordPress Skills (Added Back)
   const wordpressSkills = [
     { name: "Elementor Pro", level: "Expert" },
     { name: "WooCommerce", level: "Intermediate" },
@@ -41,10 +38,8 @@ const Skills = () => {
       className="section py-20 px-4 transition-colors relative overflow-hidden"
     >
       {/* ============ BACKGROUND DECORATION ============ */}
-      {/* ডট প্যাটার্ন */}
       <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#9ca3af_1px,transparent_1px)] dark:bg-[radial-gradient(#4b5563_1px,transparent_1px)] [background-size:20px_20px] opacity-40 dark:opacity-30"></div>
 
-      {/* ব্লার ইফেক্ট */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-title/5 rounded-full blur-[100px] -z-10"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/5 rounded-full blur-[100px] -z-10"></div>
 
@@ -63,7 +58,6 @@ const Skills = () => {
         </div>
 
         {/* ============ SKILLS CONTAINER ============ */}
-        {/* ৩টি বক্সকে সুন্দরভাবে সাজানোর জন্য Flexbox ব্যবহার করা হয়েছে */}
         <div className="flex flex-wrap justify-center gap-6 md:gap-8">
           {/* ----- Box 1: Frontend Developer ----- */}
           <SkillBox
@@ -99,7 +93,6 @@ const SkillBox = ({ title, skills, variants }) => {
       whileInView="visible"
       viewport={{ once: true }}
       variants={variants}
-      // বক্সের সাইজ এবং ডিজাইন
       className="w-full md:w-[350px] lg:w-[380px] bg-container/80 backdrop-blur-sm dark:bg-darkContainer/80 p-6 md:p-8 rounded-[2rem] border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-xl hover:border-title/20 transition-all duration-300 group"
     >
       <h3 className="text-center font-bold text-lg text-title mb-6 group-hover:text-primary transition-colors">

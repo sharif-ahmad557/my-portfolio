@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { AnimatePresence } from "framer-motion"; // এটা ইমপোর্ট করতে হবে
+import { AnimatePresence } from "framer-motion";
 
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -21,10 +21,19 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    if (isLoading) {
+      document.body.style.overflow = "hidden";
+      window.scrollTo(0, 0);
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    const timer = setTimeout(() => {
       setIsLoading(false);
     }, 3500);
-  }, []);
+
+    return () => clearTimeout(timer);
+  }, [isLoading]);
 
   return (
     <>
@@ -32,7 +41,6 @@ export default function Home() {
         {isLoading && <Preloader />}
       </AnimatePresence>
 
-      {/* মেইন ওয়েবসাইট কন্টেন্ট */}
       {!isLoading && (
         <>
           <Header />

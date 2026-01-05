@@ -23,7 +23,7 @@ const Footer = () => {
               <Facebook size={20} />
             </a>
             <a
-              href="https://www.linkedin.com/in/shariful-islam-web-developer/"
+              href="https://www.linkedin.com/in/shariful-islam-mern/"
               target="_blank"
               className="text-title rounded-xl hover:text-text transition-all duration-300 shadow-sm"
             >
