@@ -3,19 +3,19 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Technologies from "@/components/Technologies";
-import Skills from "@/components/Skills";
-import Services from "@/components/Services";
-import Qualification from "@/components/Qualification";
-import Projects from "@/components/Projects";
-import Testimonials from "@/components/Testimonials";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import ScrollUp from "@/components/ScrollUp";
-import Preloader from "@/components/Preloader";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Technologies from "../components/Technologies";
+import Skills from "../components/Skills";
+import Services from "../components/Services";
+import Qualification from "../components/Qualification";
+import Projects from "../components/Projects";
+import Testimonials from "../components/Testimonials";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import ScrollUp from "../components/ScrollUp";
+import Preloader from "../components/Preloader";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);

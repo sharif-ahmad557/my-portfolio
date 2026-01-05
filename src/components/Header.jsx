@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
+import Logo from "./Logo";
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
@@ -56,12 +57,8 @@ const Header = () => {
       >
         <nav className="container mx-auto px-10 flex justify-between items-center h-[var(--header-height)]">
           {/* Logo */}
-          <a
-            href="#"
-            className="font-bold text-2xl text-title hover:text-text transition-colors tracking-tight"
-          >
-            Sharif<span className="text-title/50">.</span>
-          </a>
+
+          <Logo />
 
           <div className="flex items-center gap-6">
             {/* Nav Items Container */}
@@ -219,4 +216,3 @@ const Header = () => {
 };
 
 export default Header;
-
