@@ -52,39 +52,42 @@ A modern, high-performance, and fully responsive Personal Portfolio website buil
 ---
 
 ## ⚙️ Environment Variables
-
-To run this project locally, you need to set up environment variables for **EmailJS**.
-Create a `.env.local` file in the root directory and add the following keys:
+#### Create a `.env.local` file in the root directory and add the following keys:
 
 ```bash
 NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id_here
 NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id_here
 NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key_here
 
+```
 Note: You can obtain these keys by signing up at EmailJS.
-🚀 Getting Started
-Follow these steps to run the project on your local machine:
-1. Clone the repository
-code
-Bash
-git clone https://github.com/sharif-ahmad557/portfolio-shahriar.git
+## 🚀 Getting Started
+### Follow these steps to run the project on your local machine:
+**1. Clone the repository**
+```Bash
+git clone https://github.com/sharif-ahmad557/my-portfolio
 
-cd portfolio-shahriar
-2. Install dependencies
-code
-Bash
+```
+**2. Install dependencies**
+
+```Bash
 npm install
-# or
-yarn install
-3. Run the development server
-code
-Bash
+
+```
+**3. Run the development server**
+```Bash
 npm run dev
+
+```
+
+```
 Open http://localhost:3000 with your browser to see the result.
-📂 Project Structure
+
+```
+**📂 Project Structur**
 A quick look at the top-level files and directories in this project.
-code
-Bash
+
+```Bash
 portfolio/
 ├── public/              # Static assets (images, pdfs)
 │   └── assets/          # Project images & Resume
@@ -101,14 +104,19 @@ portfolio/
 ├── .env.local           # Environment variables
 ├── tailwind.config.js   # Tailwind configuration
 └── package.json         # Project dependencies
-🤝 Contact
+
+```
+**🤝 Contact**
+
 Sharif
-Full Stack Developer
-📧 Email: sharifahmadwd@gmail.com
-🔗 LinkedIn: Shariful Islam
-💻 GitHub: @sharif-ahmad557
+MERN Stack Developer
+
+📧 Email: sharifahmadwd@gmail.com                                                                                                                                                                                                                                                                                                                       🔗 LinkedIn: https://www.linkedin.com/in/shariful-islam-mern/   
+
+💻 GitHub: https://github.com/sharif-ahmad557/
+
 <div align="center">
 <br />
 <sub>Built with ❤️ using Next.js & Tailwind CSS</sub>
 </div>
-```
+
