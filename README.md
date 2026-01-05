@@ -1,30 +1,38 @@
+<div align="center">
+
 # 🚀 Sharif - Professional Portfolio
 
-![Project Banner](https://i.ibb.co.com/SD8BfpqR/portfolio-banner.png)
+![Project Banner](https://i.postimg.cc/022LmXPr/Screenshot-1.png)
+
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
+
+<br />
 
 A modern, high-performance, and fully responsive Personal Portfolio website built with **Next.js 14**, **Tailwind CSS**, and **Framer Motion**. This project showcases a seamless user experience with dark/light mode support, interactive animations, and a functional contact form.
 
-🔗 **Live Demo:** [https://first-portfolio-shahriar.vercel.app/](https://first-portfolio-shahriar.vercel.app/)
+[**Explore Live Demo »**](https://my-portfolio-ten-gules-64.vercel.app/)
+
+</div>
 
 ---
 
 ## ✨ Key Features
 
-- 🎨 **Modern UI/UX:** Clean, minimalist, and pixel-perfect design.
-- 🌓 **Dark & Light Mode:** Fully supported theme switching with persistent state.
-- ⚡ **High Performance:** Built with Next.js App Router for optimal speed and SEO.
+- 🎨 **Modern UI/UX:** Clean, minimalist, and pixel-perfect design ensuring a premium look.
+- 🌓 **Dark & Light Mode:** Fully supported theme switching with persistent state management.
+- ⚡ **High Performance:** Built with **Next.js App Router** for optimal speed, SEO, and fast loading.
 - 📱 **Fully Responsive:** Optimized for Mobile, Tablet, and Desktop devices.
 - 🎬 **Smooth Animations:**
-  - Custom Preloader with "Welcome" shuffle effect.
-  - Scroll-reveal animations using Framer Motion.
-  - Floating technologies icons.
-  - Interactive hover effects.
+  - Custom Preloader with "Welcome" text shuffle effect.
+  - Scroll-reveal animations using **Framer Motion**.
+  - Interactive hover effects and floating icons.
 - 🛠 **Dynamic Components:**
-  - **Services Modal:** Detailed popup for each service.
-  - **Projects Pagination:** Functional pagination for project showcase.
-  - **Experience Tabs:** Toggle between Education and Experience timeline.
-  - **Testimonial Slider:** Auto-playing infinite slider.
-- 📧 **Functional Contact Form:** Integrated with **EmailJS** for real-time email delivery.
+  - **Services Modal:** Detailed popup for each service with animation.
+  - **Projects Showcase:** Grid view with pagination and detailed modal info.
+  - **Testimonial Slider:** Auto-playing infinite slider using Swiper.
+- 📧 **Functional Contact Form:** Integrated with **EmailJS** for real-time email delivery directly from the site.
 
 ---
 
@@ -52,63 +60,55 @@ Create a `.env.local` file in the root directory and add the following keys:
 NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id_here
 NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id_here
 NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key_here
-```
 
-```bash
-Note: You can obtain these keys by signing up at [EmailJS](https://www.emailjs.com/).
-```
-
-## 🚀 Getting Started
-
-**1. Clone the repository**
-
+Note: You can obtain these keys by signing up at EmailJS.
+🚀 Getting Started
 Follow these steps to run the project on your local machine:
-
-```bash
-git clone https://github.com/iamshahriarkabir/first-portfolio-shahriar.git
+1. Clone the repository
+code
+Bash
+git clone https://github.com/sharif-ahmad557/portfolio-shahriar.git
 
 cd portfolio-shahriar
-```
-
-**2. Install dependencies**
-
-```bash
+2. Install dependencies
+code
+Bash
 npm install
 # or
 yarn install
-```
-
-**3. Run the development server**
-
-```bash
+3. Run the development server
+code
+Bash
 npm run dev
-```
-
-## 📂 Project Structure
-
-A quick look at the top-level files and directories you'll see in this project.
-
-```bash
-
+Open http://localhost:3000 with your browser to see the result.
+📂 Project Structure
+A quick look at the top-level files and directories in this project.
+code
+Bash
+portfolio/
 ├── public/              # Static assets (images, pdfs)
+│   └── assets/          # Project images & Resume
 ├── src/
-│   ├── app/             # Next.js App Router pages (layout.js, page.js)
-│   ├── components/      # Reusable components (Header, Hero, Projects, etc.)
-│   └── providers.js     # Theme providers config
-├── .env.local           # Environment variables (Ignored by Git)
+│   ├── app/             # Next.js App Router (layout.js, page.js)
+│   │   ├── icon.tsx     # Dynamic Favicon generator
+│   │   └── globals.css  # Global styles
+│   ├── components/      # Reusable components
+│   │   ├── Header.jsx
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Projects.jsx
+│   │   └── ...
+├── .env.local           # Environment variables
 ├── tailwind.config.js   # Tailwind configuration
 └── package.json         # Project dependencies
-```
-
-## 🤝 Contact
-
-**Shahriar Kabir**
+🤝 Contact
+Sharif
 Full Stack Developer
-
-- **📧 Email:** z4codelearn@gmail.com
-- **🔗 LinkedIn:** Shahriar Kabir (Zafor)
-- **💻 GitHub:** github.com/your-github-username
-
+📧 Email: sharifahmadwd@gmail.com
+🔗 LinkedIn: Shariful Islam
+💻 GitHub: @sharif-ahmad557
 <div align="center">
-<sub>Built with ❤️ by Shahriar using Next.js</sub>
+<br />
+<sub>Built with ❤️ using Next.js & Tailwind CSS</sub>
 </div>
+```
